@@ -1,0 +1,6 @@
+# секреты и локальные файлы
+.env
+memory.json
+*.log
+__pycache__/
+.venv/
