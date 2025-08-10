@@ -1,5 +1,3 @@
 git add .
-git commit -m "init: telegram gpt bot (safe)"
-git branch -M main
-git remote add origin https://github.com/<твой_ник>/telegram-gpt-bot.git
-git push -u origin main
+git commit -m "safe bot + sheets + webhook"
+git push

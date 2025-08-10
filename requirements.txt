@@ -1,4 +1,6 @@
-python-telegram-bot==21.4
-openai==1.40.3
-python-dotenv==1.0.1
-httpx==0.27.2
+python-telegram-bot==20.7
+openai>=1.40.0
+gspread==6.1.2
+google-auth==2.31.0
+aiohttp>=3.9.5
+python-dotenv>=1.0.1
