@@ -1,3 +1,7 @@
+from keep_alive import keep_alive
+
+keep_alive()
+
 # bot.py
 import os
 import re
@@ -252,3 +256,26 @@ def main():
 
 if __name__ == "__main__":
     main()
+from flask import Flask
+import os
+
+app = Flask(__name__)
+
+
+@app.route("/")
+def index():
+    return "Bot is running!"
+
+
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
+import gspread
+from google.oauth2.service_account import Credentials
+
+SCOPES = ["https://www.googleapis.com/auth/spreadsheets"]
+creds = Credentials.from_service_account_file("google-credentials.json", scopes=SCOPES)
+client = gspread.authorize(creds)
+
+sheet = client.open("Название таблицы").sheet1
+sheet.append_row(["Время", "Сообщение"])

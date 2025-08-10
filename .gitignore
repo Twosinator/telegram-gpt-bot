@@ -4,3 +4,4 @@ memory.json
 *.log
 __pycache__/
 .venv/
+google-credentials.json
